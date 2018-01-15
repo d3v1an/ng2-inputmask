@@ -3,7 +3,8 @@ import { Directive, HostListener, Input, ElementRef, OnInit, EventEmitter, Outpu
 
 const placeholders = {
   'A': '^[a-zA-ZA-zА-яЁё]',
-  '0': '\\d'
+  '0': '\\d',
+  'X': '^[a-zA-ZA-z0-9]'
 };
 
 const keys = {
@@ -209,4 +210,3 @@ export class InputMaskDirective implements OnInit {
   }
 
 }
-
